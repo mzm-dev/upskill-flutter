@@ -118,6 +118,9 @@ Mewujudkan fail ```show.dart``` untu memaparkan butiran dari ```home.dart```
   - ```fontFamily: 'Bubblegum'```
 - Navigator push and pop
   - Widget InkWell  
+- Data Model
+- ListView Builder
+- UI Element ```ListTile()```
 
 **Custom Widget : KlikGambarWidget()**
 ```dart
@@ -145,12 +148,35 @@ class KlikGambarWidget extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.25,
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('images/fruit/$nama'), fit: BoxFit.cover)),
+                image: AssetImage('images/$nama'), fit: BoxFit.cover)),
       ),
     );
   }
 }
 ```
+**Data Models**
+
+```dart
+class Gambar {
+  String gambar;
+  String tajuk;
+
+  Gambar({required this.gambar, required this.tajuk});
+}
+```
+
+**Data List<Gambat>**
+```dart
+List<Gambar> semua = [
+  Gambar(gambar: 'avatar/avatar1.png', tajuk: 'Avatar 1'),
+  Gambar(gambar: 'avatar/avatar2.png', tajuk: 'Avatar 2'),
+  Gambar(gambar: 'avatar/avatar3.png', tajuk: 'Avatar 3'),
+  Gambar(gambar: 'avatar/avatar4.png', tajuk: 'Avatar 4'),
+  Gambar(gambar: 'avatar/avatar5.png', tajuk: 'Avatar 5'),
+];
+
+```
+
   
 Latihan 4 : [flutter_application_4](https://github.com/mzm-dev/upskill-flutter/tree/main/flutter_projek/flutter_application_4)
 
