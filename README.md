@@ -98,6 +98,7 @@ Mewujudkan fail ```home.dart``` yang berasingan bagi penyusunan struktur projek
   - Widget Center
   - Widget Text
   - Widget Image  
+  - Dependencies : images
 - Navigator push and pop
 
 **double? width**
@@ -113,7 +114,8 @@ Latihan 4 : [flutter_application_3](https://github.com/mzm-dev/upskill-flutter/t
 ## Latihan 4
 
 Mewujudkan fail ```show.dart``` untu memaparkan butiran dari ```home.dart```
-
+- Dependencies : fonts
+  - ```fontFamily: 'Bubblegum'``
 - Navigator push and pop
   - Widget InkWell  
 
