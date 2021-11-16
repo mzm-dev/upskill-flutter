@@ -1,6 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_4/pages/list.dart';
+import 'package:flutter_application_4/pages/listdata.dart';
 import 'package:flutter_application_4/pages/show.dart';
 
 class Home extends StatelessWidget {
@@ -28,22 +30,32 @@ class Home extends StatelessWidget {
               //color: Colors.orange,
               //child: Text('Column 2'),
             ),
-            Container(
-              padding: EdgeInsets.all(5),
-              height: 80,
-              alignment: Alignment.centerRight,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage('images/fruit/fruit_main.jpg'),
-                      fit: BoxFit.cover)),
-              //color: Colors.orange,
-              child: const Text('My Fruits',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      letterSpacing: 3.5,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Bubblegum')),
+            InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ListPage()));
+              },
+              onDoubleTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ListDataPage()));
+              },
+              child: Container(
+                padding: EdgeInsets.all(5),
+                height: 80,
+                alignment: Alignment.centerRight,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('images/fruit/fruit_main.jpg'),
+                        fit: BoxFit.cover)),
+                //color: Colors.orange,
+                child: const Text('My Fruits',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        letterSpacing: 3.5,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Bubblegum')),
+              ),
             ),
             Container(
               padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
@@ -52,10 +64,10 @@ class Home extends StatelessWidget {
             Container(
               child: Row(
                 children: [
-                  KlikGambarWidget(title: 'Fruit 1', nama: 'fruit_1.jpg'),
-                  KlikGambarWidget(title: 'Fruit 2', nama: 'fruit_2.jpg'),
-                  KlikGambarWidget(title: 'Fruit 3', nama: 'fruit_3.jpg'),
-                  KlikGambarWidget(title: 'Fruit 4', nama: 'fruit_4.jpg'),
+                  KlikGambarWidget(title: 'Fruit 1', nama: 'fruit/fruit_1.jpg'),
+                  KlikGambarWidget(title: 'Fruit 2', nama: 'fruit/fruit_2.jpg'),
+                  KlikGambarWidget(title: 'Fruit 3', nama: 'fruit/fruit_3.jpg'),
+                  KlikGambarWidget(title: 'Fruit 4', nama: 'fruit/fruit_4.jpg'),
                 ],
               ),
             ),
@@ -118,9 +130,7 @@ class KlikGambarWidget extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.25,
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('images/fruit/$nama'), fit: BoxFit.cover)),
-        //color: Colors.purple[100],
-        //child: Center(child: Text('Row 1')),
+                image: AssetImage('images/$nama'), fit: BoxFit.cover)),
       ),
     );
   }

@@ -17,7 +17,7 @@ class ShowPage extends StatelessWidget {
           height: MediaQuery.of(context).size.height * 1,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/fruit/$gambar'),
+              image: AssetImage('images/$gambar'),
               fit: BoxFit.cover,
             ),
           ),
