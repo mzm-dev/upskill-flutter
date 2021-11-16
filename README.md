@@ -76,6 +76,8 @@ Latihan 1 : [flutter_application_1](https://github.com/mzm-dev/upskill-flutter/t
 
 Merangka Layout berasaskan **Column** dan **Row** bagi membentuk satu susunan _layout_ yang dikehendaki didalam antaramuka aplikasi
 
+![flutter layout](screen-layout.png)
+
 - StatelessWidget
 - MaterialApp
 - Scaffold
@@ -89,6 +91,8 @@ Latihan 2 : [flutter_application_2](https://github.com/mzm-dev/upskill-flutter/t
 
 ## Latihan 3
 Melengkapkan Layout **Column** dan **Row** dengan kandungan seperti Widget Text & Image untuk menghasilkan aplikasi lebih menarik
+
+![flutter apps](screen-apps.png)
 
 Mewujudkan fail ```home.dart``` yang berasingan bagi penyusunan struktur projek 
 
