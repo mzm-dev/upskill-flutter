@@ -115,7 +115,7 @@ Latihan 4 : [flutter_application_3](https://github.com/mzm-dev/upskill-flutter/t
 
 Mewujudkan fail ```show.dart``` untu memaparkan butiran dari ```home.dart```
 - Dependencies : fonts
-  - ```fontFamily: 'Bubblegum'``
+  - ```fontFamily: 'Bubblegum'```
 - Navigator push and pop
   - Widget InkWell  
 
