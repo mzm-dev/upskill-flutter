@@ -1,4 +1,4 @@
-![flutter](screen1.png)
+![flutter](screen.jpg)
 
 - Pengenalan kepada Mobile Platorm
 - Apa itu Flutter Framework
