@@ -1,6 +1,5 @@
 ![flutter](screen1.png)
 
-# Hari 1
 - Pengenalan kepada Mobile Platorm
 - Apa itu Flutter Framework
 - Pemasangan persekitaran Flutter, Android SDK & VSCode IDE
