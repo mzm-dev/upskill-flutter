@@ -108,7 +108,49 @@ Mewujudkan fail ```home.dart``` yang berasingan bagi penyusunan struktur projek
 
 
   
-Latihan 3 : [flutter_application_3](https://github.com/mzm-dev/upskill-flutter/tree/main/flutter_projek/flutter_application_3)
+Latihan 4 : [flutter_application_3](https://github.com/mzm-dev/upskill-flutter/tree/main/flutter_projek/flutter_application_4)
+
+## Latihan 3
+
+Mewujudkan fail ```show.dart``` untu memaparkan butiran dari ```home.dart```
+
+- Navigator push and pop
+  - Widget InkWell  
+
+**Custom Widget : KlikGambarWidget()**
+```dart
+class KlikGambarWidget extends StatelessWidget {
+  KlikGambarWidget({
+    Key? key,
+    required this.title,
+    required this.nama,
+  }) : super(key: key);
+
+  String title;
+  String nama;
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => ShowPage(gambar: nama, title: title)));
+      },
+      child: Container(
+        height: 100,
+        width: MediaQuery.of(context).size.width * 0.25,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('images/fruit/$nama'), fit: BoxFit.cover)),
+      ),
+    );
+  }
+}
+```
+  
+Latihan 4 : [flutter_application_4](https://github.com/mzm-dev/upskill-flutter/tree/main/flutter_projek/flutter_application_4)
 
 # Rujukan
 - https://flutterflow.io/index.html
