@@ -99,6 +99,7 @@ Mewujudkan fail ```home.dart``` yang berasingan bagi penyusunan struktur projek
   - Widget Center
   - Widget Text
   - Widget Image  
+- Navigator push and pop
 
 **double? width**
 ```MediaQuery.of(context).size.width``` 
