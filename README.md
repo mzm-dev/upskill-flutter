@@ -110,7 +110,7 @@ Mewujudkan fail ```home.dart``` yang berasingan bagi penyusunan struktur projek
   
 Latihan 4 : [flutter_application_3](https://github.com/mzm-dev/upskill-flutter/tree/main/flutter_projek/flutter_application_4)
 
-## Latihan 3
+## Latihan 4
 
 Mewujudkan fail ```show.dart``` untu memaparkan butiran dari ```home.dart```
 
