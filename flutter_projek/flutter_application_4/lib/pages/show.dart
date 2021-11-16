@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 class ShowPage extends StatelessWidget {
-  ShowPage({Key? key, required this.gambar}) : super(key: key);
+  ShowPage({Key? key, required this.gambar, required this.title})
+      : super(key: key);
 
   final String gambar;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Show')),
+      appBar: AppBar(title: Text(title)),
       body: Center(
         child: Container(
           padding: EdgeInsets.all(5),
