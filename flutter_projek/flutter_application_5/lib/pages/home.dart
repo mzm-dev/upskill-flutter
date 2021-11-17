@@ -1,8 +1,10 @@
 import 'dart:ui';
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/pages/list.dart';
 import 'package:flutter_application_4/pages/listdata.dart';
+import 'package:flutter_application_4/pages/login.dart';
 import 'package:flutter_application_4/pages/show.dart';
 import 'package:flutter_application_4/widgets/menu.dart';
 
@@ -16,7 +18,24 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Material App Bar'),
+        actions: [
+          IconButton(
+              onPressed: () {
+                //Navigator
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Home()));
+              },
+              icon: Icon(Icons.home)),
+          IconButton(
+              onPressed: () {
+                //Navigator
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LoginPage()));
+              },
+              icon: Icon(Icons.login)),
+        ],
       ),
+      drawerEdgeDragWidth: MediaQuery.of(context).size.width * 0.25,
       drawer: MenuWidget(),
       body: SingleChildScrollView(
         child: Column(
