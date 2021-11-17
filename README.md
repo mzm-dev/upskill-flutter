@@ -184,6 +184,18 @@ List<Gambar> semua = [
   
 Latihan 4 : [flutter_application_4](https://github.com/mzm-dev/upskill-flutter/tree/main/flutter_projek/flutter_application_4)
 
+## Latihan 5
+
+Membina ```Drawer()``` (side bar)
+
+Menghasilkan AppBar action button utk ```LoginPage()```  
+  
+Mengubah App icon launcher
+
+Menghasilkan apk dengan CLI ```flutter build apk```  
+  
+Latihan 5 : [flutter_application_5](https://github.com/mzm-dev/upskill-flutter/tree/main/flutter_projek/flutter_application_5)
+
 # Rujukan
 - [Flutter Icon](https://fonts.google.com/icons?selected=Material+Icons)
 - [Flutter Flow](https://flutterflow.io/index.html)
