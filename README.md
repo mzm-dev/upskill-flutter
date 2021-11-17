@@ -1,6 +1,6 @@
 ![flutter](screen.jpg)
 
-- Pengenalan kepada Mobile Platorm
+- Pengenalan kepada Mobile Platorm [(Slide)](https://github.com/mzm-dev/upskill-flutter/blob/main/slide-Flutter.pdf)
 - Apa itu Flutter Framework
 - Pemasangan persekitaran Flutter, Android SDK & VSCode IDE
 - Widget Layout & UI Element
