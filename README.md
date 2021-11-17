@@ -185,4 +185,5 @@ List<Gambar> semua = [
 Latihan 4 : [flutter_application_4](https://github.com/mzm-dev/upskill-flutter/tree/main/flutter_projek/flutter_application_4)
 
 # Rujukan
-- https://flutterflow.io/index.html
+- [Flutter Icon](https://fonts.google.com/icons?selected=Material+Icons)
+- [Flutter Flow](https://flutterflow.io/index.html)
